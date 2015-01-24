@@ -1,0 +1,1113 @@
+/* ==========================================================================
+   HTML5 Boilerplate Base styles: opinionated defaults
+   ========================================================================== */
+/* line 10, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #333; }
+
+/* line 14, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+html {
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 23, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 40, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 48, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 58, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 66, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+  text-align: center; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 82, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+/* line 90, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 101, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 110, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 127, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 140, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 157, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 162, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 171, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 198, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  /* line 206, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  /* line 210, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 214, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 224, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  /* line 229, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 234, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  /* line 239, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  /* line 243, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  /* line 253, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 259, /app/source-temp/themes/glide/stylesheets/_html5bp.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 22, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 125, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 154, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 190, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 201, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 270, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 282, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 297, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 307, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 317, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 341, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 350, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /app/source-temp/themes/glide/stylesheets/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 6, /app/source-temp/themes/glide/stylesheets/_shared.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 13, /app/source-temp/themes/glide/stylesheets/_shared.scss */
+.invisilink {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 21, /app/source-temp/themes/glide/stylesheets/_shared.scss */
+img {
+  max-width: 100%;
+  /* just in case, to force correct aspet ratio */
+  height: auto !important; }
+
+/* line 27, /app/source-temp/themes/glide/stylesheets/_shared.scss */
+video {
+  max-width: 100%;
+  /* just in case, to force correct aspet ratio */
+  height: auto !important; }
+
+/* line 33, /app/source-temp/themes/glide/stylesheets/_shared.scss */
+audio {
+  width: 100%; }
+
+/* line 39, /app/source-temp/themes/glide/stylesheets/_shared.scss */
+.video-wrapper {
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  position: relative; }
+
+/* line 44, /app/source-temp/themes/glide/stylesheets/_shared.scss */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+/* ==========================================================================
+   Bitbooks base styles
+   ========================================================================== */
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 12, /app/source-temp/themes/glide/stylesheets/_base.scss */
+::-moz-selection {
+  background: #ec7963;
+  color: white;
+  text-shadow: none; }
+
+/* line 18, /app/source-temp/themes/glide/stylesheets/_base.scss */
+::selection {
+  background: #ec7963;
+  color: white;
+  text-shadow: none; }
+
+/* line 24, /app/source-temp/themes/glide/stylesheets/_base.scss */
+html {
+  /* Too Small */
+  /*
+    @media screen and (min-width: $desktop-1) {
+      font-size: 1.250em; // 16px * 1.250em = 20px base font
+    }
+  
+    @media screen and (min-width: $desktop-2) {
+      font-size: 1.375em; // 16px * 1.375em = 22px base font
+    }
+  */ }
+  @media screen and (max-width: 460px) {
+    /* line 24, /app/source-temp/themes/glide/stylesheets/_base.scss */
+    html {
+      font-size: 0.875em; } }
+  @media screen and (min-width: 460px) {
+    /* line 24, /app/source-temp/themes/glide/stylesheets/_base.scss */
+    html {
+      font-size: 1em; } }
+  @media screen and (min-width: 600px) {
+    /* line 24, /app/source-temp/themes/glide/stylesheets/_base.scss */
+    html {
+      font-size: 1em; } }
+  @media screen and (min-width: 1030px) {
+    /* line 24, /app/source-temp/themes/glide/stylesheets/_base.scss */
+    html {
+      font-size: 1.125em; } }
+
+/* line 53, /app/source-temp/themes/glide/stylesheets/_base.scss */
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+
+/* line 59, /app/source-temp/themes/glide/stylesheets/_base.scss */
+body {
+  background: #fff;
+  font-family: "Helvetica Neue", helvetica, sans-serif;
+  line-height: 1.5; }
+
+/* line 65, /app/source-temp/themes/glide/stylesheets/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", helvetica, sans-serif;
+  font-weight: normal;
+  margin: 1em 0; }
+
+/* line 71, /app/source-temp/themes/glide/stylesheets/_base.scss */
+h1 {
+  font-size: 2.250em; }
+
+/* line 75, /app/source-temp/themes/glide/stylesheets/_base.scss */
+h2 {
+  font-size: 1.50em;
+  border-bottom: 1px solid #ccc; }
+
+/* line 80, /app/source-temp/themes/glide/stylesheets/_base.scss */
+h3 {
+  font-size: 1.313em; }
+
+/* line 84, /app/source-temp/themes/glide/stylesheets/_base.scss */
+h4 {
+  font-size: 1.313em;
+  font-style: italic; }
+
+/* line 89, /app/source-temp/themes/glide/stylesheets/_base.scss */
+h5 {
+  font-size: 1.125em;
+  text-transform: uppercase; }
+
+/* line 94, /app/source-temp/themes/glide/stylesheets/_base.scss */
+h6 {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  color: #777; }
+
+/* line 100, /app/source-temp/themes/glide/stylesheets/_base.scss */
+a {
+  color: #ec7963;
+  text-decoration: underline; }
+  /* line 104, /app/source-temp/themes/glide/stylesheets/_base.scss */
+  a:hover {
+    text-decoration: none; }
+  /* line 115, /app/source-temp/themes/glide/stylesheets/_base.scss */
+  a:focus {
+    background-color: #ec7963;
+    color: white;
+    text-decoration: none; }
+
+/* line 122, /app/source-temp/themes/glide/stylesheets/_base.scss */
+p {
+  color: #3b3b3b; }
+
+/* line 126, /app/source-temp/themes/glide/stylesheets/_base.scss */
+ul {
+  -webkit-padding-start: 2em;
+  color: #3b3b3b; }
+
+/* line 131, /app/source-temp/themes/glide/stylesheets/_base.scss */
+blockquote {
+  font-style: italic;
+  margin-left: 1.94em; }
+
+/* line 136, /app/source-temp/themes/glide/stylesheets/_base.scss */
+table {
+  margin: 1em 0;
+  width: 100%; }
+
+/* line 142, /app/source-temp/themes/glide/stylesheets/_base.scss */
+th,
+td {
+  border: solid 1px #ccc;
+  padding: 5px 11px;
+  vertical-align: top; }
+
+/**
+ * 'Simple' styling for code examples
+ */
+/* line 153, /app/source-temp/themes/glide/stylesheets/_base.scss */
+code,
+samp,
+kbd {
+  font-family: "Courier", monospace;
+  font-size: 0.9em;
+  padding: 0 6px;
+  text-align: left; }
+
+/* line 160, /app/source-temp/themes/glide/stylesheets/_base.scss */
+pre {
+  font-family: "Courier", monospace;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  margin: 1.2em 0;
+  overflow: auto;
+  padding: 5px 0 5px 1.5em;
+  border: 1px solid #ddd;
+  white-space: pre;
+  word-wrap: normal; }
+
+/**
+* Override 'code' css rules if using 'pre > code' markup.
+*/
+/* line 177, /app/source-temp/themes/glide/stylesheets/_base.scss */
+pre > code {
+  padding: 0; }
+
+/**
+ * target IE7 and IE6
+ */
+/* line 184, /app/source-temp/themes/glide/stylesheets/_base.scss */
+*:first-child + html pre {
+  overflow: visible;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2em; }
+
+/* line 191, /app/source-temp/themes/glide/stylesheets/_base.scss */
+* html pre {
+  overflow: visible;
+  overflow-x: auto;
+  padding-bottom: 2em; }
+
+/* line 2, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.page-header {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 2em 0; }
+  /* line 10, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .book_index .page-header, .index .page-header {
+    padding: 3em 0; }
+
+/* line 14, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.book-title {
+  font-family: "Bree Serif", "Helvetica Neue", helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 2.50em;
+  display: block;
+  margin: 0; }
+  /* line 23, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .book_index .book-title, .index .book-title {
+    font-size: 3em;
+    padding: 0; }
+
+/* line 29, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.book_index .book-author,
+.index .book-author {
+  font-size: 1em;
+  font-family: "Bree Serif", "Helvetica Neue", helvetica, sans-serif;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* line 44, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.content-wrapper {
+  max-width: 55em;
+  margin: 0 auto;
+  padding: 3em 2em; }
+  @media screen and (max-width: 900px) {
+    /* line 44, /app/source-temp/themes/glide/stylesheets/_main.scss */
+    .content-wrapper {
+      max-width: 46em; } }
+  @media screen and (max-width: 600px) {
+    /* line 44, /app/source-temp/themes/glide/stylesheets/_main.scss */
+    .content-wrapper {
+      padding: 3em 1em; } }
+
+/* line 55, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.aside-content {
+  float: right;
+  width: 34%;
+  padding-right: 5em; }
+  @media screen and (max-width: 1030px) {
+    /* line 55, /app/source-temp/themes/glide/stylesheets/_main.scss */
+    .aside-content {
+      padding-right: 3em; } }
+  /* line 64, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .aside-content .block {
+    font-size: 0.875em; }
+    /* line 67, /app/source-temp/themes/glide/stylesheets/_main.scss */
+    .aside-content .block:first-child h3 {
+      margin-top: 0.4em; }
+    /* line 71, /app/source-temp/themes/glide/stylesheets/_main.scss */
+    .aside-content .block h3 {
+      font-family: "Bree Serif", "Helvetica Neue", helvetica, sans-serif;
+      font-size: 1.2em; }
+  @media screen and (max-width: 600px) {
+    /* line 55, /app/source-temp/themes/glide/stylesheets/_main.scss */
+    .aside-content {
+      float: none;
+      width: 100%;
+      padding: 3em 0 0 0;
+      margin-top: 3em;
+      border-top: 1px solid #F2F2F2; } }
+
+/* line 87, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.main-content {
+  width: 66%;
+  float: right; }
+  /* line 91, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .main-content h1:first-child {
+    margin-top: 0; }
+  @media screen and (max-width: 600px) {
+    /* line 87, /app/source-temp/themes/glide/stylesheets/_main.scss */
+    .main-content {
+      float: none;
+      width: 100%;
+      padding-right: 0; } }
+
+/* line 105, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.table-of-contents {
+  margin-bottom: 3.5em; }
+  /* line 108, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .table-of-contents ul {
+    list-style-type: none;
+    padding-left: 1em; }
+  /* line 112, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .table-of-contents li.child {
+    line-height: 1;
+    padding: 2px 0 8px 0; }
+  /* line 117, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .table-of-contents nav > ul {
+    padding: 0;
+    -webkit-padding-start: 0; }
+
+/* line 124, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.main-content-source {
+  margin-bottom: 2em; }
+  /* line 127, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .main-content-source li {
+    padding: 4px 0;
+    line-height: 1.3; }
+  /* line 132, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .main-content-source img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+/* line 140, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.main-content-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+/* line 146, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.main-content-nav li {
+  display: inline; }
+  /* line 149, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .main-content-nav li:first-child {
+    float: left;
+    overflow: hidden; }
+  /* line 154, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .main-content-nav li:last-child {
+    float: right;
+    overflow: hidden; }
+/* line 160, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.main-content-nav a {
+  display: block;
+  padding: 0.5em 0;
+  width: 6em;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #ec7963;
+  transition: background-color 0.15s ease-in; }
+
+/* line 172, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.active {
+  font-weight: bold; }
+
+/* line 176, /app/source-temp/themes/glide/stylesheets/_main.scss */
+a.anchor-link:focus {
+  background-color: transparent; }
+
+/* line 180, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.previous {
+  position: relative;
+  margin-left: 1em; }
+  /* line 184, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .previous:after {
+    content: "";
+    position: absolute;
+    top: -0.313em;
+    left: -1.375em;
+    width: 0;
+    height: 0;
+    border-color: transparent #ec7963 transparent transparent;
+    border-style: solid;
+    border-width: 1.625em 1em 1.625em 0.5em;
+    transition: border-color 0.15s ease-in; }
+  /* line 197, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .previous:hover, .previous:focus {
+    background: #e85a3f; }
+  /* line 201, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .previous:hover:after, .previous:focus:after {
+    border-color: transparent #e85a3f transparent transparent; }
+
+/* line 206, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.next {
+  position: relative;
+  margin-right: 1em; }
+  /* line 210, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .next:after {
+    content: "";
+    position: absolute;
+    top: -0.313em;
+    right: -1.375em;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #ec7963;
+    border-style: solid;
+    border-width: 1.625em 0.5em 1.625em 1em;
+    transition: border-color 0.15s ease-in; }
+  /* line 223, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .next:hover, .next:focus {
+    background: #e85a3f; }
+  /* line 227, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .next:hover:after, .next:focus:after {
+    border-color: transparent transparent transparent #e85a3f; }
+
+/* line 233, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.page-footer {
+  clear: both;
+  background-color: #f2f2f2;
+  padding: 2em 0; }
+
+/* line 238, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.footer-wrapper {
+  max-width: 36em;
+  margin: 0 auto;
+  padding: 0 1em; }
+  /* line 243, /app/source-temp/themes/glide/stylesheets/_main.scss */
+  .footer-wrapper .block {
+    width: 49%;
+    padding: 0 0.8em;
+    font-size: 0.875em;
+    float: left; }
+    /* line 249, /app/source-temp/themes/glide/stylesheets/_main.scss */
+    .footer-wrapper .block h3 {
+      font-family: "Bree Serif", "Helvetica Neue", helvetica, sans-serif;
+      font-size: 1.2em; }
+    @media screen and (max-width: 600px) {
+      /* line 243, /app/source-temp/themes/glide/stylesheets/_main.scss */
+      .footer-wrapper .block {
+        width: 100%;
+        padding: 0; } }
+
+/* line 261, /app/source-temp/themes/glide/stylesheets/_main.scss */
+.page-footer small {
+  clear: both;
+  display: block;
+  text-align: center;
+  padding: 1em 0; }
+
+/**
+ * Store the link icon as a base64 embedded icon font.
+ */
+@font-face {
+  font-family: 'anchorjs-link';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg6v8yoAAAC8AAAAYGNtYXDL8RqdAAABHAAAADxnYXNwAAAAEAAAAVgAAAAIZ2x5Zkm2oNUAAAFgAAABWGhlYWQAHd4cAAACuAAAADZoaGVhB3sECwAAAvAAAAAkaG10eAYAAEcAAAMUAAAADGxvY2EACgCsAAADIAAAAAhtYXhwAAYAcAAAAygAAAAgbmFtZUQXtNYAAANIAAABOXBvc3QAAwAAAAAEhAAAACAAAwQAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAACDmAAPA/8D/wAPAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEACgAAAAGAAQAAQACACDmAP//AAAAIOYA////4RoCAAEAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAIARwAHA7kDeQA2AG0AAAEnLgEiBg8BDgEUFh8BHgMXNy4DLwEuATQ2PwE+ATIWHwEeARQGDwEeAxU3PgE0JicBLgMnBx4DHwEeARQGDwEOASImLwEuATQ2PwEuAzUHDgEUFh8BHgEyNj8BPgE0Ji8BA7kEI1ldWiPaIyQkIwQDBgYGBFAEBwYHAwQTExMT2xMwMjETBBMTExNjBwkGA5gkIyMk/r4DBgYGBFAEBwYHAwQTExMT2xMwMjETBBMTExNjBwkGA5gkIyMkBCNZXVoj2iMkJCMEA3UEJCMjJNojWV1aIwQDBgUFA1ACBQUFAwQUMDIxE9oTExMTBBMxMjATYxAhISIRmSNaXVkj/sYDBgUFA1ACBQUFAwQUMDIxE9oTExMTBBMxMjATYxAhISIRmSNaXVkjBCQjIyTaI1ldWiMEAAEAAAABAABR/4xQXw889QALBAAAAAAAzqNM0wAAAADOo0zTAAAAAAO5A3kAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAABHA7kAAQAAAAAAAAAAAAAAAAAAAAMAAAAAAgAAAAQAAEcAAAAAAAoArAABAAAAAwBuAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADgAAAAEAAAAAAAIADgBHAAEAAAAAAAMADgAkAAEAAAAAAAQADgBVAAEAAAAAAAUAFgAOAAEAAAAAAAYABwAyAAEAAAAAAAoAKABjAAMAAQQJAAEADgAAAAMAAQQJAAIADgBHAAMAAQQJAAMADgAkAAMAAQQJAAQADgBVAAMAAQQJAAUAFgAOAAMAAQQJAAYADgA5AAMAAQQJAAoAKABjAGkAYwBvAG0AbwBvAG4AVgBlAHIAcwBpAG8AbgAgADAALgAwAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG4AUgBlAGcAdQBsAGEAcgBpAGMAbwBtAG8AbwBuAEcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAATwAAsAAAAABKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgDq/zKmNtYXAAAAFoAAAAPAAAADzL8RqdZ2FzcAAAAaQAAAAIAAAACAAAABBnbHlmAAABrAAAAVgAAAFYSbag1WhlYWQAAAMEAAAANgAAADYAHd4caGhlYQAAAzwAAAAkAAAAJAd7BAtobXR4AAADYAAAAAwAAAAMBgAAR2xvY2EAAANsAAAACAAAAAgACgCsbWF4cAAAA3QAAAAgAAAAIAAGAHBuYW1lAAADlAAAATkAAAE5RBe01nBvc3QAAATQAAAAIAAAACAAAwAAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAg5gADwP/A/8ADwABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAAoAAAABgAEAAEAAgAg5gD//wAAACDmAP///+EaAgABAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAACAEcABwO5A3kANgBtAAABJy4BIgYPAQ4BFBYfAR4DFzcuAy8BLgE0Nj8BPgEyFh8BHgEUBg8BHgMVNz4BNCYnAS4DJwceAx8BHgEUBg8BDgEiJi8BLgE0Nj8BLgM1Bw4BFBYfAR4BMjY/AT4BNCYvAQO5BCNZXVoj2iMkJCMEAwYGBgRQBAcGBwMEExMTE9sTMDIxEwQTExMTYwcJBgOYJCMjJP6+AwYGBgRQBAcGBwMEExMTE9sTMDIxEwQTExMTYwcJBgOYJCMjJAQjWV1aI9ojJCQjBAN1BCQjIyTaI1ldWiMEAwYFBQNQAgUFBQMEFDAyMRPaExMTEwQTMTIwE2MQISEiEZkjWl1ZI/7GAwYFBQNQAgUFBQMEFDAyMRPaExMTEwQTMTIwE2MQISEiEZkjWl1ZIwQkIyMk2iNZXVojBAABAAAAAQAAUf+MUF8PPPUACwQAAAAAAM6jTNMAAAAAzqNM0wAAAAADuQN5AAAACAACAAAAAAAAAAEAAAPA/8AAAAQAAAAARwO5AAEAAAAAAAAAAAAAAAAAAAADAAAAAAIAAAAEAABHAAAAAAAKAKwAAQAAAAMAbgACAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA4ArgABAAAAAAABAA4AAAABAAAAAAACAA4ARwABAAAAAAADAA4AJAABAAAAAAAEAA4AVQABAAAAAAAFABYADgABAAAAAAAGAAcAMgABAAAAAAAKACgAYwADAAEECQABAA4AAAADAAEECQACAA4ARwADAAEECQADAA4AJAADAAEECQAEAA4AVQADAAEECQAFABYADgADAAEECQAGAA4AOQADAAEECQAKACgAYwBpAGMAbwBtAG8AbwBuAFYAZQByAHMAaQBvAG4AIAAwAC4AMABpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuAFIAZQBnAHUAbABhAHIAaQBjAG8AbQBvAG8AbgBHAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4AAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 12, /app/source-temp/themes/glide/stylesheets/_anchor.scss */
+.icon-link {
+  font-family: 'anchorjs-link';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Icon Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/**
+ * Link placement and hover behavior.
+ */
+/* line 29, /app/source-temp/themes/glide/stylesheets/_anchor.scss */
+a.anchor-link {
+  opacity: 0;
+  text-decoration: none; }
+
+/* line 33, /app/source-temp/themes/glide/stylesheets/_anchor.scss */
+*:hover > a.anchor-link, a.anchor-link:focus {
+  /* To fade links as they appear, change transition-property from "color" to "all" */
+  opacity: 1;
+  -webkit-transition: color .16s linear;
+  -moz-transition: color .16s linear;
+  -o-transition: color .16s linear;
+  transition: color .16s linear; }
+
+/* line 41, /app/source-temp/themes/glide/stylesheets/_anchor.scss */
+.icon-link:before {
+  content: "\e600"; }
+
+/**
+ * Reasonable default styles.
+ * Feel free to override or replace these with your own.
+ */
+/* line 49, /app/source-temp/themes/glide/stylesheets/_anchor.scss */
+a.anchor-link:link {
+  color: #dfd487; }
+
+/* line 50, /app/source-temp/themes/glide/stylesheets/_anchor.scss */
+a.anchor-link:visited {
+  color: #dfd487; }
+
+/* line 51, /app/source-temp/themes/glide/stylesheets/_anchor.scss */
+a.anchor-link:hover {
+  color: #ec7963; }
+
+/* line 52, /app/source-temp/themes/glide/stylesheets/_anchor.scss */
+a.anchor-link:active {
+  color: #ec7963; }
+
+/* line 54, /app/source-temp/themes/glide/stylesheets/_anchor.scss */
+.icon-link {
+  font-size: 90%;
+  padding-left: 6px; }
